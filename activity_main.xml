@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="360dp"
+        android:layout_height="58dp"
+        android:text="Which is the capital of Pakistan"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/answersRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/answerOption1"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:text="Karachi" />
+        <RadioButton
+            android:id="@+id/answerOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Islamabad" />
+        <RadioButton
+            android:id="@+id/answerOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khairpur" />
+        <!-- Radio buttons for answer choices go here -->
+        <!-- Example radio button for answer choice -->
+        <!--
+        <RadioButton
+            android:id="@+id/answerOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1" />
+        -->
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Result will be shown here"
+        android:visibility="gone" />
+</LinearLayout>
